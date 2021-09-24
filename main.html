@@ -1,0 +1,111 @@
+    <!-- 
+        List of INPUTS
+        @@ 1. Text
+        @@ 2. Password
+        @@ 3. Number
+        4. Range (slide bar)
+        @@ 5. Checkbox
+        @@ 6. Radio (Checkbox but only one option)
+        @@ 7. Dropdown List
+        8. Datalist Input
+    -->
+
+    <html>
+        <head>
+            <link rel="stylesheet" href="style.css">
+
+            <style>
+                body {
+                    height: 200px;
+                    background-color: #F1ECC3; /* For browsers that do not support gradients */
+                    background-image: linear-gradient(to right, #F1ECC3 , #C9D8B6);
+                    }
+            </style>
+        </head>
+
+
+
+        <body>
+            <form>
+                <h1>"Tell us about yourself" survey</h1>
+                
+                <p>Instruction Survey</p>
+                <div>
+                    This survey is all about you telling us your information. We want to get to know about you!
+                </div>
+
+                <p>Name</p><input type="text" name="username" placeholder="Enter your name"><br>
+                <br>
+
+
+                <p>Email</p><input type="text" name="useremail" placeholder="Enter your Email"><br>
+                <br>
+
+
+                <p>Password</p><input type="password" name="userpassword" placeholder="Enter your Password"><br>
+                <br>
+
+
+                <p>Age</p><input type="number" name="userage" placeholder="Enter your age"><br>
+                <br>
+
+                <p>Gender</p>
+
+                <input id="usergender" name="gender" type="radio" value="female">
+                <label for="usergender">Female</label>
+                <br>
+                
+                <input id="usergender" name="gender" type="radio" value="male">
+                <label for="usergender">Male</label>
+                <br>
+                
+                <input id="usergender" name="gender" type="radio" value="nonbinary">
+                <label for="usergender">Non-Binary</label>
+                <br><br>
+
+                
+                <p>Family Memebrs</p>
+
+                <input id="userfamily" name="members" type="checkbox" value="mother">
+                <label for="userfamily">Mother</label>
+                <br>
+
+
+                <input id="userfamily" name="members" type="checkbox" value="father">
+                <label for="userfamily">Father</label>
+                <br>
+
+
+                <input id="userfamily" name="members" type="checkbox" value="sister">
+                <label for="userfamily">Sister</label>
+                <br>
+
+
+                <input id="userfamily" name="members" type="checkbox" value="brother">
+                <label for="userfamily">Brother</label>
+                <br>
+                
+
+                <input id="userfamily" name="members" type="checkbox" value="grandmother">
+                <label for="userfamily">Grandmother</label>
+                <br>
+                            
+
+                <input id="userfamily" name="members" type="checkbox" value="grandfather">
+                <label for="userfamily">Grandfather</label>
+                <br> <br>
+
+
+                <p>Which option best describes your current role?</p>
+                <select name="role" >
+                    <option value="placeholder">Select an Option</option>
+                    <option value="Student">Student</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Unemployed">Unemployed</option>
+                    <option value="Other">Other</option>
+                </select>
+            </form>
+            
+        </body>
+
+    </html>
